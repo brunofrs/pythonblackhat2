@@ -3,3 +3,5 @@
 </div>
 
 Alterei os scripts desse livro no meu repositório para ajudar a melhorar o desempenho.
+
+Qualquer sugestão será sempre bem-vinda!
