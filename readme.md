@@ -6,4 +6,4 @@ Alterei os scripts desse livro no meu repositório para ajudar a melhorar o dese
 
 Qualquer sugestão será sempre bem-vinda!
 
-Obs: O uso dos scripts são apenas para fins educacionais. Não me responsabilizo pelo uso indevido destas ferramentas.
+Obs: O uso dos scripts são apenas para fins educacionais. Não me responsabilizo por outras pessoas pelo uso indevido destas ferramentas. 
