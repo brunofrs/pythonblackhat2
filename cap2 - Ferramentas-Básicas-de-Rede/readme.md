@@ -1,4 +1,6 @@
+<div align='center'>
 Capítulo 2 - Ferramentas básicas de rede
+<div>
 
 #cliente_tcp.py
 
