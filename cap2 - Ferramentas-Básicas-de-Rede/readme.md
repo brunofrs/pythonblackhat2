@@ -1,7 +1,5 @@
 Capítulo 2 - Ferramentas básicas de rede
 
-Utilizei a biblioteca colorama para deixar a saída do código um pouco mais organizado.
-
 #cliente_tcp.py
 
 Simples cliente tcp para enviar dados.
