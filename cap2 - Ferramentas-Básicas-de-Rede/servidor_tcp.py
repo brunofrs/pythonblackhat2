@@ -1,3 +1,4 @@
+from colorama import Fore, Back, Style
 import socket
 import threading
 
@@ -10,11 +11,11 @@ def main():
     server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     server.bind((IP,PORT))
     server.listen(5)
-    print(f'[*] Servidor iniciado {IP}:{PORT}')
+    print(f'[*] Servidor iniciado {IP}:{PORT}' + Style.RESET_ALL)
 
     while True:
         client, address = server.accept()
-        print(f'[*] Conexão estabelecida com {address[0]}:{address[1]}')
+        print(Fore.GREEN + f'[*] Conexão estabelecida com {address[0]}:{address[1]}' + Style.RESET_ALL)
         client_handler = threading.Thread(target=handle_client, args=(client,))
         client_handler.start()
 
@@ -22,7 +23,7 @@ def main():
 def handle_client(client_socket):
     with client_socket as sock:
         request = sock.recv(1024)
-        print(f'[*] Recebendo: {request.decode("utf-8")}')
+        print(Fore.YELLOW + f'[*] Recebendo: {request.decode("utf-8")}' + Style.RESET_ALL) 
         sock.send(b'ACK')
 
 
